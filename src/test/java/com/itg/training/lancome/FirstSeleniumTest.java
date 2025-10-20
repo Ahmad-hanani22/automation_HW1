@@ -8,10 +8,13 @@ import org.testng.annotations.*;
 import com.itg.training.selectors.HomePageSelectors;
 import com.itg.training.selectors.LoginPageSelectors;
 
-public class FirstSeleniumTest {
 
+public class FirstSeleniumTest {
+  
+	
     WebDriver driver;
 
+    
     @Parameters({"driverPath", "siteURL"})
     @BeforeClass
     public void setup(String driverPath, String siteURL) {
@@ -27,6 +30,8 @@ public class FirstSeleniumTest {
         System.out.println(" Browser launched and site opened successfully!");
     }
 
+    
+    
     @Test(priority = 1)
     public void verifyLogo() {
         boolean isLogoDisplayed = driver.findElement(HomePageSelectors.LOGO).isDisplayed();
@@ -44,10 +49,13 @@ public class FirstSeleniumTest {
         boolean isWelcomeDisplayed =
                 driver.findElement(LoginPageSelectors.WELCOME_MSG).isDisplayed();
 
+        
         Assert.assertTrue(isWelcomeDisplayed, " 'Welcome back!' message was not displayed!");
         System.out.println("'Welcome back!' message is displayed — Sign In page loaded successfully!");
     }
-
+   
+    
+    
     @AfterClass
     public void tearDown() {
         driver.quit();
