@@ -44,7 +44,7 @@ public class FirstSeleniumTest {
         driver.findElement(HomePageSelectors.ACCOUNT_LINK).click();
         System.out.println(" Clicked on Account successfully");
 
-        Thread.sleep(5000); 
+        Thread.sleep(3000); 
 
         boolean isWelcomeDisplayed =
                 driver.findElement(LoginPageSelectors.WELCOME_MSG).isDisplayed();
@@ -54,6 +54,7 @@ public class FirstSeleniumTest {
         System.out.println("'Welcome back!' message is displayed — Sign In page loaded successfully!");
     }
    
+    
     
     
     @AfterClass

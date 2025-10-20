@@ -2,7 +2,7 @@
 
 <suite name="Lancome Selenium Suite" verbose="1">
 
-    <parameter name="siteURL" value="https://ballarddesigns.com/" />
+    <parameter name="siteURL" value="https://certwcs.ballarddesigns.com/?aka_bypass=5C73514EE7A609054D81DE61DD9CA3D6" />
     <parameter name="driverPath" value="C:\\Drivers\\chromedriver.exe" />
 
     <test name="Smoke Tests">

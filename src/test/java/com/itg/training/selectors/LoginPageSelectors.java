@@ -7,5 +7,8 @@ public final class LoginPageSelectors {
 
     
     public static final By WELCOME_MSG = 
-        By.xpath("//p[contains(text(),'Welcome back! To access your account')]");
+        By.xpath("//p[contains(normalize-space(), 'Welcome back!')]\r\n"
+        		+ ""); //*[@id="BDLoginMessageNormal"]/p[1]
 }
+
+
