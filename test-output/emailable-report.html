@@ -9,11 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Lancome Selenium Suite</th></tr>
-<tr><td><a href="#t0">Smoke Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,145</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Smoke Tests</a></td><td class="num">3</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,849</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Lancome Selenium Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m0">clickAccountIconAndVerifyWelcome</a></td><td rowspan="1">1760994148233</td><td rowspan="1">3449</td></tr><tr class="passedeven"><td><a href="#m1">verifyLogo</a></td><td rowspan="1">1760994148094</td><td rowspan="1">123</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Lancome Selenium Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m0">loginWithValidCredentials</a></td><td rowspan="1">1761156302707</td><td rowspan="1">89</td></tr><tr><th colspan="4">Smoke Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m1">verifyAccountWelcomeText</a></td><td rowspan="1">1761156302809</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">verifyUserLoggedIn</a></td><td rowspan="1">1761156302804</td><td rowspan="1">0</td></tr><tr><th colspan="4">Smoke Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m3">clickSignInRegister</a></td><td rowspan="1">1761156299534</td><td rowspan="1">2113</td></tr><tr class="passedeven"><td><a href="#m4">verifyLogo</a></td><td rowspan="1">1761156299450</td><td rowspan="1">82</td></tr><tr class="passedeven"><td><a href="#m5">verifyWelcomeMessage</a></td><td rowspan="1">1761156301656</td><td rowspan="1">1047</td></tr></tbody>
 </table>
-<h2>Smoke Tests</h2><h3 id="m0">com.itg.training.lancome.FirstSeleniumTest#clickAccountIconAndVerifyWelcome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.itg.training.lancome.FirstSeleniumTest#verifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Smoke Tests</h2><h3 id="m0">com.itg.training.lancome.FirstSeleniumTest#loginWithValidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=141.0.7390.108)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3dd7638176f346fe577459d885074c, clearElement {id=f.EB34A8CA488FE8F28307065570E30864.d.E55711CD50AC050C435FF5B34033B2BF.e.134}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51450/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8d3dd7638176f346fe577459d885074c)] -&gt; id: email]
+Session ID: 8d3dd7638176f346fe577459d885074c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.itg.training.lancome.FirstSeleniumTest#verifyAccountWelcomeText</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.itg.training.lancome.FirstSeleniumTest#verifyUserLoggedIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.itg.training.lancome.FirstSeleniumTest#clickSignInRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.itg.training.lancome.FirstSeleniumTest#verifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.itg.training.lancome.FirstSeleniumTest#verifyWelcomeMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

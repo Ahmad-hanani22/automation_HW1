@@ -5,10 +5,14 @@
     <classes>
       <class name="com.itg.training.lancome.FirstSeleniumTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="openWebsiteAndVerifyLogo"/>
-          <include name="clickAccountAndVerifyWelcomeMessage"/>
-          <include name="setupBrowser"/>
+          <include name="clickSignInRegister"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="verifyUserLoggedIn"/>
+          <include name="verifyAccountWelcomeText"/>
+          <include name="tearDown"/>
+          <include name="verifyLogo"/>
+          <include name="verifyWelcomeMessage"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.itg.training.lancome.FirstSeleniumTest -->
     </classes>
