@@ -35,7 +35,7 @@ public class FirstSeleniumTest {
         WebElement accountLink = driver.findElement(HomePageSelectors.ACCOUNT_LINK);
         accountLink.click();
         System.out.println("✅ 'Sign In/Register' clicked!");
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
 
     
@@ -44,7 +44,7 @@ public class FirstSeleniumTest {
         WebElement welcomeMsg = driver.findElement(LoginPageSelectors.WELCOME_MSG);
         Assert.assertTrue(welcomeMsg.isDisplayed(), "❌ 'Welcome back!' message not displayed!");
         System.out.println("✅ 'Welcome back!' message is displayed!");
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     
@@ -59,11 +59,11 @@ public class FirstSeleniumTest {
         passwordField.clear();
         passwordField.sendKeys("0569630981Aa$");
 
-        Thread.sleep(3000); 
+        Thread.sleep(3500); 
 
         loginButton.click();
         System.out.println("✅ Login button clicked!");
-        Thread.sleep(4000);
+        Thread.sleep(5000);
     }
 
     
