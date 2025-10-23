@@ -104,25 +104,48 @@ public class FirstSeleniumTest {
             Assert.fail("Login test failed!");
         }
     }
-
     @Test(priority = 5, dependsOnMethods = "loginWithValidCredentials")
     public void verifyUserLoggedIn() {
         ReportManager.createTest("Verify User Logged In", "Check if 'My Account' link appears");
-        WebElement accountLink = driver.findElement(HomePageSelectors.ACCOUNT_LINK);
-        String linkText = accountLink.getText().trim();
-        Assert.assertEquals(linkText, "My Account", "❌ Link text not changed!");
-        ReportUtil.logPass("✅ 'Sign In/Register' changed to 'My Account' successfully!");
+        try {
+            WebElement accountLink = driver.findElement(HomePageSelectors.ACCOUNT_LINK);
+            String linkText = accountLink.getText().trim();
+
+            // 🔍 تحقق من النص بالضبط
+            Assert.assertEquals(linkText, "My Account", "❌ Link text not changed!");
+
+            ReportUtil.logPass("✅ 'Sign In/Register' changed to 'My Account' successfully!");
+        } catch (AssertionError ae) {
+            ReportUtil.logFail(driver, "❌ Assertion failed: " + ae.getMessage());
+            Assert.fail("❌ Assertion failed: " + ae.getMessage());
+        } catch (Exception e) {
+            ReportUtil.logFail(driver, "❌ Unexpected error during verification: " + e.getMessage());
+            Assert.fail("❌ Unexpected error during verification: " + e.getMessage());
+        }
     }
+
 
     @Test(priority = 6)
     public void verifyAccountWelcomeText() {
         ReportManager.createTest("Verify Account Welcome Text", "Checking user welcome message");
-        WebElement welcomeText = driver.findElement(LoginPageSelectors.ACCOUNT_WELCOME_TEXT);
-        String actualText = welcomeText.getText().trim();
-        Assert.assertEquals(actualText, "Welcome to your account at Ballard Designs.",
-                "❌ Welcome text is incorrect!");
-        ReportUtil.logPass("✅ Verified account welcome text successfully!");
+        try {
+            WebElement welcomeText = driver.findElement(LoginPageSelectors.ACCOUNT_WELCOME_TEXT);
+            String actualText = welcomeText.getText().trim();
+
+            // 🔍 تحقق من النص بالضبط
+            Assert.assertEquals(actualText, "Welcome to your account at Ballard Designs.",
+                    "❌ Welcome text is incorrect!");
+
+            ReportUtil.logPass("✅ Verified account welcome text successfully!");
+        } catch (AssertionError ae) {
+            ReportUtil.logFail(driver, "❌ Text verification failed: " + ae.getMessage());
+            Assert.fail("❌ Text verification failed: " + ae.getMessage());
+        } catch (Exception e) {
+            ReportUtil.logFail(driver, "❌ Unexpected error during welcome text check: " + e.getMessage());
+            Assert.fail("❌ Unexpected error during welcome text check: " + e.getMessage());
+        }
     }
+
 
     @AfterClass
     public void tearDown() {

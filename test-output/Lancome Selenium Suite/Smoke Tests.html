@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 23 12:17:36 AKDT 2025</td>
+<td>Started on:</td><td>Thu Oct 23 14:54:50 AKDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19197 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23568 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,54 +76,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText()'><b>verifyAccountWelcomeText</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]&quot;}
-  (Session info: chrome=141.0.7390.108)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d6ee4ea69a88abac8f801bd8ecabb9b, findElement {using=xpath, value=//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:120)
+<td title='com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn()'><b>verifyUserLoggedIn</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
+<td><div><pre>java.lang.AssertionError: ❌ Assertion failed: ❌ Link text not changed! expected [My Account] but found []
+	at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:120)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace604060129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace604060129'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]&quot;}
-  (Session info: chrome=141.0.7390.108)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d6ee4ea69a88abac8f801bd8ecabb9b, findElement {using=xpath, value=//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:120)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1921553024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1921553024'><pre>java.lang.AssertionError: ❌ Assertion failed: ❌ Link text not changed! expected [My Account] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:120)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -154,18 +114,30 @@ Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
 <td>0</td>
 <td>com.itg.training.lancome.FirstSeleniumTest@327514f</td></tr>
 <tr>
-<td title='com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn()'><b>verifyUserLoggedIn</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
-<td><div><pre>java.lang.AssertionError: ❌ Link text not changed! expected [My Account] but found []
-	at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:113)
+<td title='com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText()'><b>verifyAccountWelcomeText</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
+<td><div><pre>java.lang.AssertionError: ❌ Unexpected error during welcome text check: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]&quot;}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b369c7557d4a08b1ee6fc4b6aad21597, findElement {value=//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55847/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b369c7557d4a08b1ee6fc4b6aad21597
+	at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:145)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace141015648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace141015648'><pre>java.lang.AssertionError: ❌ Link text not changed! expected [My Account] but found []
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace565079667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace565079667'><pre>java.lang.AssertionError: ❌ Unexpected error during welcome text check: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]&quot;}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b369c7557d4a08b1ee6fc4b6aad21597, findElement {value=//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55847/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b369c7557d4a08b1ee6fc4b6aad21597
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:113)
+	at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:145)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -210,7 +182,7 @@ Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
 <td>0</td>
 <td>com.itg.training.lancome.FirstSeleniumTest@327514f</td></tr>
 <tr>
-<td title='com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister()'><b>clickSignInRegister</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
+<td title='com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
 <td></td>
 <td>5</td>
 <td>com.itg.training.lancome.FirstSeleniumTest@327514f</td></tr>
@@ -220,7 +192,7 @@ Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
 <td>0</td>
 <td>com.itg.training.lancome.FirstSeleniumTest@327514f</td></tr>
 <tr>
-<td title='com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
+<td title='com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister()'><b>clickSignInRegister</b><br>Test class: com.itg.training.lancome.FirstSeleniumTest</td>
 <td></td>
 <td>5</td>
 <td>com.itg.training.lancome.FirstSeleniumTest@327514f</td></tr>
