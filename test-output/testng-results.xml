@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="3" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-22T10:04:53 AKDT" name="Lancome Selenium Suite" finished-at="2025-10-22T10:05:03 AKDT" duration-ms="9849">
+  <suite started-at="2025-10-23T11:22:41 AKDT" name="Lancome Selenium Suite" finished-at="2025-10-23T11:22:58 AKDT" duration-ms="17071">
     <groups>
     </groups>
-    <test started-at="2025-10-22T10:04:53 AKDT" name="Smoke Tests" finished-at="2025-10-22T10:05:03 AKDT" duration-ms="9849">
+    <test started-at="2025-10-23T11:22:41 AKDT" name="Smoke Tests" finished-at="2025-10-23T11:22:58 AKDT" duration-ms="17071">
       <class name="com.itg.training.lancome.FirstSeleniumTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:04:53 AKDT" name="setup" finished-at="2025-10-22T10:04:59 AKDT" duration-ms="6192" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:41 AKDT" name="setup" finished-at="2025-10-23T11:22:52 AKDT" duration-ms="10657" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,54 +23,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogo()[pri:1, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:04:59 AKDT" name="verifyLogo" finished-at="2025-10-22T10:04:59 AKDT" duration-ms="82" status="PASS">
+        <test-method signature="verifyLogo()[pri:1, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:52 AKDT" name="verifyLogo" finished-at="2025-10-23T11:22:52 AKDT" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method signature="clickSignInRegister()[pri:2, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:04:59 AKDT" name="clickSignInRegister" finished-at="2025-10-22T10:05:01 AKDT" duration-ms="2113" status="PASS">
+        <test-method signature="clickSignInRegister()[pri:2, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:52 AKDT" name="clickSignInRegister" finished-at="2025-10-23T11:22:56 AKDT" duration-ms="4379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSignInRegister -->
-        <test-method signature="verifyWelcomeMessage()[pri:3, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:05:01 AKDT" name="verifyWelcomeMessage" finished-at="2025-10-22T10:05:02 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister" duration-ms="1047" status="PASS">
+        <test-method signature="verifyWelcomeMessage()[pri:3, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:56 AKDT" name="verifyWelcomeMessage" finished-at="2025-10-23T11:22:56 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWelcomeMessage -->
-        <test-method signature="loginWithValidCredentials()[pri:4, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:05:02 AKDT" name="loginWithValidCredentials" finished-at="2025-10-22T10:05:02 AKDT" duration-ms="89" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidElementStateException">
+        <test-method signature="loginWithValidCredentials()[pri:4, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:56 AKDT" name="loginWithValidCredentials" finished-at="2025-10-23T11:22:57 AKDT" duration-ms="335" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[invalid element state
-  (Session info: chrome=141.0.7390.108)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d3dd7638176f346fe577459d885074c, clearElement {id=f.EB34A8CA488FE8F28307065570E30864.d.E55711CD50AC050C435FF5B34033B2BF.e.134}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51450/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8d3dd7638176f346fe577459d885074c)] -> id: email]
-Session ID: 8d3dd7638176f346fe577459d885074c]]>
+              <![CDATA[Login test failed!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=141.0.7390.108)
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d3dd7638176f346fe577459d885074c, clearElement {id=f.EB34A8CA488FE8F28307065570E30864.d.E55711CD50AC050C435FF5B34033B2BF.e.134}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51450/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8d3dd7638176f346fe577459d885074c)] -> id: email]
-Session ID: 8d3dd7638176f346fe577459d885074c
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:57)
+              <![CDATA[java.lang.AssertionError: Login test failed!
+at org.testng.Assert.fail(Assert.java:111)
+at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:70)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -99,19 +72,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="verifyUserLoggedIn()[pri:5, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:05:02 AKDT" name="verifyUserLoggedIn" finished-at="2025-10-22T10:05:02 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials" duration-ms="0" status="SKIP">
+        <test-method signature="verifyUserLoggedIn()[pri:5, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:57 AKDT" name="verifyUserLoggedIn" finished-at="2025-10-23T11:22:57 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]]]>
+              <![CDATA[Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]
+              <![CDATA[java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -137,15 +110,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLoggedIn -->
-        <test-method signature="verifyAccountWelcomeText()[pri:6, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:05:02 AKDT" name="verifyAccountWelcomeText" finished-at="2025-10-22T10:05:02 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn" duration-ms="0" status="SKIP">
+        <test-method signature="verifyAccountWelcomeText()[pri:6, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:57 AKDT" name="verifyAccountWelcomeText" finished-at="2025-10-23T11:22:57 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]]]>
+              <![CDATA[Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]
+              <![CDATA[java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -171,7 +144,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountWelcomeText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@54d9d12d]" started-at="2025-10-22T10:05:02 AKDT" name="tearDown" finished-at="2025-10-22T10:05:03 AKDT" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:57 AKDT" name="tearDown" finished-at="2025-10-23T11:22:58 AKDT" duration-ms="1400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

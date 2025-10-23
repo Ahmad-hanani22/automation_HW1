@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Lancome_Selenium_Suite" class="navigator-link ">
-                    <span>C:\Users\Administrator\eclipse-workspace\lancome-tests\testng.xml</span>
+                    <span>C:\Users\Administrator\Desktop\automation_HW1\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -172,27 +172,10 @@
                   <a name="loginWithValidCredentials">
                   </a> <!-- loginWithValidCredentials -->
                   <span class="method-name">loginWithValidCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
-  (Session info: chrome=141.0.7390.108)
-Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d3dd7638176f346fe577459d885074c, clearElement {id=f.EB34A8CA488FE8F28307065570E30864.d.E55711CD50AC050C435FF5B34033B2BF.e.134}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51450/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8d3dd7638176f346fe577459d885074c)] -&gt; id: email]
-Session ID: 8d3dd7638176f346fe577459d885074c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:57)
+                  <div class="stack-trace">java.lang.AssertionError: Login test failed!
+	at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:70)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -209,8 +192,8 @@ Session ID: 8d3dd7638176f346fe577459d885074c
                   <a name="verifyAccountWelcomeText">
                   </a> <!-- verifyAccountWelcomeText -->
                   <span class="method-name">verifyAccountWelcomeText</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]
+                  <div class="stack-trace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 18 stack frames
 </div> <!-- stack-trace -->
@@ -221,8 +204,8 @@ Session ID: 8d3dd7638176f346fe577459d885074c
                   <a name="verifyUserLoggedIn">
                   </a> <!-- verifyUserLoggedIn -->
                   <span class="method-name">verifyUserLoggedIn</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@54d9d12d]
+                  <div class="stack-trace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
+[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 18 stack frames
 </div> <!-- stack-trace -->
@@ -262,7 +245,7 @@ Session ID: 8d3dd7638176f346fe577459d885074c
         </div> <!-- panel Lancome_Selenium_Suite -->
         <div panel-name="test-xml-Lancome_Selenium_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\eclipse-workspace\lancome-tests\testng.xml</span>
+            <span class="header-content">C:\Users\Administrator\Desktop\automation_HW1\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -317,19 +300,19 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'clickSignInRegister')
 data.setCell(0, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(0, 3, 2113);
+data.setCell(0, 3, 4379);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyWelcomeMessage')
+data.setCell(1, 1, 'loginWithValidCredentials')
 data.setCell(1, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(1, 3, 1047);
+data.setCell(1, 3, 335);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithValidCredentials')
+data.setCell(2, 1, 'verifyLogo')
 data.setCell(2, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(2, 3, 89);
+data.setCell(2, 3, 147);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLogo')
+data.setCell(3, 1, 'verifyWelcomeMessage')
 data.setCell(3, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(3, 3, 82);
+data.setCell(3, 3, 76);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyAccountWelcomeText')
 data.setCell(4, 2, 'com.itg.training.lancome.FirstSeleniumTest')
@@ -342,7 +325,7 @@ window.suiteTableData['Lancome_Selenium_Suite']= { tableData: data, tableDiv: 't
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Lancome_Selenium_Suite">
               </div> <!-- times-div-Lancome_Selenium_Suite -->
             </div> <!-- times-div -->
@@ -375,25 +358,25 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLogo</span>
-                <span class="method-start">6196 ms</span>
+                <span class="method-start">10671 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickSignInRegister</span>
-                <span class="method-start">6280 ms</span>
+                <span class="method-start">10825 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyWelcomeMessage</span>
-                <span class="method-start">8402 ms</span>
+                <span class="method-start">15209 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">9453 ms</span>
+                <span class="method-start">15288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9560 ms</span>
+                <span class="method-start">15643 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

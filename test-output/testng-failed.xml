@@ -9,8 +9,8 @@
         <methods>
           <include name="loginWithValidCredentials"/>
           <include name="verifyUserLoggedIn"/>
-          <include name="verifyAccountWelcomeText"/>
           <include name="tearDown"/>
+          <include name="verifyAccountWelcomeText"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.itg.training.lancome.FirstSeleniumTest -->
