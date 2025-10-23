@@ -2,6 +2,8 @@ package com.itg.training.lancome;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -15,14 +17,34 @@ public class FirstSeleniumTest {
     @Parameters({"driverPath", "siteURL"})
     @BeforeClass
     public void setup(String driverPath, String siteURL) {
-        ReportManager.initReport(); 
+        ReportManager.initReport();
         System.setProperty("webdriver.chrome.driver", driverPath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(siteURL);
+
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(5));
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+
+            WebElement closeButton = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.cssSelector("button[aria-label='Close'] , button[title='Close'] , div[class*='close'] , svg[aria-label='Close']")
+            ));
+
+            if (closeButton.isDisplayed()) {
+                js.executeScript("arguments[0].click();", closeButton);
+                System.out.println("🍪 Cookies popup closed successfully (X clicked)!");
+                Thread.sleep(1000);
+            }
+
+        } catch (Exception e) {
+            System.out.println("ℹ️ No cookie popup found — continuing test normally.");
+        }
+
         ReportManager.createTest("Setup", "Browser launched and site opened successfully");
         ReportUtil.logInfo("✅ Browser launched and site opened successfully!");
     }
+
 
     @Test(priority = 1)
     public void verifyLogo() {
@@ -37,7 +59,7 @@ public class FirstSeleniumTest {
         ReportManager.createTest("Click Sign In/Register", "Navigate to login page");
         WebElement accountLink = driver.findElement(HomePageSelectors.ACCOUNT_LINK);
         accountLink.click();
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         ReportUtil.logPass("✅ 'Sign In/Register' clicked!");
     }
 
@@ -53,18 +75,30 @@ public class FirstSeleniumTest {
     public void loginWithValidCredentials() throws InterruptedException {
         ReportManager.createTest("Login with Valid Credentials", "Entering login credentials and submitting form");
         try {
-            WebElement emailField = driver.findElement(LoginPageSelectors.EMAIL_FIELD);
-            WebElement passwordField = driver.findElement(LoginPageSelectors.PASSWORD_FIELD);
-            WebElement loginButton = driver.findElement(LoginPageSelectors.SIGNIN_BUTTON);
+            WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
+            JavascriptExecutor js = (JavascriptExecutor) driver;
 
-            emailField.clear();
-            emailField.sendKeys("ahmadj7hanani0@gmail.com");
-            passwordField.clear();
-            passwordField.sendKeys("0569630981Aa$");
-            Thread.sleep(3000);
-            loginButton.click();
-            Thread.sleep(5000);
+            WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPageSelectors.EMAIL_FIELD));
+            WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPageSelectors.PASSWORD_FIELD));
+            WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(LoginPageSelectors.SIGNIN_BUTTON));
+
+            js.executeScript("arguments[0].scrollIntoView(true);", emailField);
+            Thread.sleep(500);
+
+            js.executeScript("arguments[0].value='ahmadj7hanani0@gmail.com';", emailField);
+            js.executeScript("arguments[0].value='0569630981Aa$';", passwordField);
+
+            Thread.sleep(1000);
+
+            try {
+                loginButton.click();
+            } catch (Exception e) {
+                js.executeScript("arguments[0].click();", loginButton);
+            }
+
             ReportUtil.logPass("✅ Login button clicked successfully!");
+            Thread.sleep(4000);
+
         } catch (Exception e) {
             ReportUtil.logFail(driver, "❌ Failed during login step: " + e.getMessage());
             Assert.fail("Login test failed!");
@@ -80,7 +114,7 @@ public class FirstSeleniumTest {
         ReportUtil.logPass("✅ 'Sign In/Register' changed to 'My Account' successfully!");
     }
 
-    @Test(priority = 6, dependsOnMethods = "verifyUserLoggedIn")
+    @Test(priority = 6)
     public void verifyAccountWelcomeText() {
         ReportManager.createTest("Verify Account Welcome Text", "Checking user welcome message");
         WebElement welcomeText = driver.findElement(LoginPageSelectors.ACCOUNT_WELCOME_TEXT);
@@ -93,7 +127,7 @@ public class FirstSeleniumTest {
     @AfterClass
     public void tearDown() {
         driver.quit();
-        ReportManager.flushReport(); //   
+        ReportManager.flushReport();
         System.out.println("✅ Browser closed and report generated successfully!");
     }
 }

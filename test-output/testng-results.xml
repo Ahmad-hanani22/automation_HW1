@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="3" failed="1" skipped="2">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-23T11:22:41 AKDT" name="Lancome Selenium Suite" finished-at="2025-10-23T11:22:58 AKDT" duration-ms="17071">
+  <suite started-at="2025-10-23T12:17:36 AKDT" name="Lancome Selenium Suite" finished-at="2025-10-23T12:17:55 AKDT" duration-ms="19197">
     <groups>
     </groups>
-    <test started-at="2025-10-23T11:22:41 AKDT" name="Smoke Tests" finished-at="2025-10-23T11:22:58 AKDT" duration-ms="17071">
+    <test started-at="2025-10-23T12:17:36 AKDT" name="Smoke Tests" finished-at="2025-10-23T12:17:55 AKDT" duration-ms="19197">
       <class name="com.itg.training.lancome.FirstSeleniumTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:41 AKDT" name="setup" finished-at="2025-10-23T11:22:52 AKDT" duration-ms="10657" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:36 AKDT" name="setup" finished-at="2025-10-23T12:17:43 AKDT" duration-ms="7220" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,27 +23,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogo()[pri:1, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:52 AKDT" name="verifyLogo" finished-at="2025-10-23T11:22:52 AKDT" duration-ms="147" status="PASS">
+        <test-method signature="verifyLogo()[pri:1, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:43 AKDT" name="verifyLogo" finished-at="2025-10-23T12:17:43 AKDT" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method signature="clickSignInRegister()[pri:2, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:52 AKDT" name="clickSignInRegister" finished-at="2025-10-23T11:22:56 AKDT" duration-ms="4379" status="PASS">
+        <test-method signature="clickSignInRegister()[pri:2, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:43 AKDT" name="clickSignInRegister" finished-at="2025-10-23T12:17:49 AKDT" duration-ms="5108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSignInRegister -->
-        <test-method signature="verifyWelcomeMessage()[pri:3, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:56 AKDT" name="verifyWelcomeMessage" finished-at="2025-10-23T11:22:56 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister" duration-ms="76" status="PASS">
+        <test-method signature="verifyWelcomeMessage()[pri:3, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:49 AKDT" name="verifyWelcomeMessage" finished-at="2025-10-23T12:17:49 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWelcomeMessage -->
-        <test-method signature="loginWithValidCredentials()[pri:4, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:56 AKDT" name="loginWithValidCredentials" finished-at="2025-10-23T11:22:57 AKDT" duration-ms="335" status="FAIL">
+        <test-method signature="loginWithValidCredentials()[pri:4, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:49 AKDT" name="loginWithValidCredentials" finished-at="2025-10-23T12:17:54 AKDT" duration-ms="5741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="verifyUserLoggedIn()[pri:5, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:54 AKDT" name="verifyUserLoggedIn" finished-at="2025-10-23T12:17:54 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials" duration-ms="55" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Login test failed!]]>
+              <![CDATA[❌ Link text not changed! expected [My Account] but found []]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login test failed!
+              <![CDATA[java.lang.AssertionError: ❌ Link text not changed! expected [My Account] but found []
 at org.testng.Assert.fail(Assert.java:111)
-at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:70)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:113)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -75,51 +83,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="verifyUserLoggedIn()[pri:5, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:57 AKDT" name="verifyUserLoggedIn" finished-at="2025-10-23T11:22:57 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- verifyUserLoggedIn -->
-        <test-method signature="verifyAccountWelcomeText()[pri:6, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:57 AKDT" name="verifyAccountWelcomeText" finished-at="2025-10-23T11:22:57 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        <test-method signature="verifyAccountWelcomeText()[pri:6, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:54 AKDT" name="verifyAccountWelcomeText" finished-at="2025-10-23T12:17:54 AKDT" duration-ms="25" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')]"}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d6ee4ea69a88abac8f801bd8ecabb9b, findElement {using=xpath, value=//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')]"}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d6ee4ea69a88abac8f801bd8ecabb9b, findElement {using=xpath, value=//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:120)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -140,11 +150,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountWelcomeText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T11:22:57 AKDT" name="tearDown" finished-at="2025-10-23T11:22:58 AKDT" duration-ms="1400" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T12:17:54 AKDT" name="tearDown" finished-at="2025-10-23T12:17:55 AKDT" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -9,23 +9,39 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Lancome Selenium Suite</th></tr>
-<tr><td><a href="#t0">Smoke Tests</a></td><td class="num">3</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,071</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Smoke Tests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">19,197</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Lancome Selenium Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m0">loginWithValidCredentials</a></td><td rowspan="1">1761247376690</td><td rowspan="1">335</td></tr><tr><th colspan="4">Smoke Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m1">verifyAccountWelcomeText</a></td><td rowspan="1">1761247377037</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">verifyUserLoggedIn</a></td><td rowspan="1">1761247377031</td><td rowspan="1">0</td></tr><tr><th colspan="4">Smoke Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m3">clickSignInRegister</a></td><td rowspan="1">1761247372227</td><td rowspan="1">4379</td></tr><tr class="passedeven"><td><a href="#m4">verifyLogo</a></td><td rowspan="1">1761247372073</td><td rowspan="1">147</td></tr><tr class="passedeven"><td><a href="#m5">verifyWelcomeMessage</a></td><td rowspan="1">1761247376611</td><td rowspan="1">76</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Lancome Selenium Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m0">verifyAccountWelcomeText</a></td><td rowspan="1">1761250674887</td><td rowspan="1">25</td></tr><tr class="failedeven"><td><a href="#m1">verifyUserLoggedIn</a></td><td rowspan="1">1761250674822</td><td rowspan="1">55</td></tr><tr><th colspan="4">Smoke Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.itg.training.lancome.FirstSeleniumTest</td><td><a href="#m2">clickSignInRegister</a></td><td rowspan="1">1761250663893</td><td rowspan="1">5108</td></tr><tr class="passedeven"><td><a href="#m3">loginWithValidCredentials</a></td><td rowspan="1">1761250669078</td><td rowspan="1">5741</td></tr><tr class="passedeven"><td><a href="#m4">verifyLogo</a></td><td rowspan="1">1761250663866</td><td rowspan="1">23</td></tr><tr class="passedeven"><td><a href="#m5">verifyWelcomeMessage</a></td><td rowspan="1">1761250669034</td><td rowspan="1">43</td></tr></tbody>
 </table>
-<h2>Smoke Tests</h2><h3 id="m0">com.itg.training.lancome.FirstSeleniumTest#loginWithValidCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login test failed!
-	at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:70)
+<h2>Smoke Tests</h2><h3 id="m0">com.itg.training.lancome.FirstSeleniumTest#verifyAccountWelcomeText</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]&quot;}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d6ee4ea69a88abac8f801bd8ecabb9b, findElement {using=xpath, value=//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:120)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.itg.training.lancome.FirstSeleniumTest#verifyAccountWelcomeText</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.itg.training.lancome.FirstSeleniumTest#verifyUserLoggedIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ❌ Link text not changed! expected [My Account] but found []
+	at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:113)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.itg.training.lancome.FirstSeleniumTest#verifyUserLoggedIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.itg.training.lancome.FirstSeleniumTest#clickSignInRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.itg.training.lancome.FirstSeleniumTest#clickSignInRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.itg.training.lancome.FirstSeleniumTest#loginWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">com.itg.training.lancome.FirstSeleniumTest#verifyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">com.itg.training.lancome.FirstSeleniumTest#verifyWelcomeMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

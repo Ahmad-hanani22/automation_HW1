@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  2 skipped,  3 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,29 +103,15 @@
                     <div class="method-list-content failed suite-Lancome_Selenium_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Lancome_Selenium_Suite" title="com.itg.training.lancome.FirstSeleniumTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Lancome_Selenium_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Lancome_Selenium_Suite" class="hide-methods skipped suite-Lancome_Selenium_Suite"> (hide)</a> <!-- hide-methods skipped suite-Lancome_Selenium_Suite -->
-                      <a href="#" panel-name="suite-Lancome_Selenium_Suite" class="show-methods skipped suite-Lancome_Selenium_Suite"> (show)</a> <!-- show-methods skipped suite-Lancome_Selenium_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Lancome_Selenium_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Lancome_Selenium_Suite" title="com.itg.training.lancome.FirstSeleniumTest" class="method navigator-link" hash-for-method="verifyAccountWelcomeText">verifyAccountWelcomeText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Lancome_Selenium_Suite" title="com.itg.training.lancome.FirstSeleniumTest" class="method navigator-link" hash-for-method="verifyUserLoggedIn">verifyUserLoggedIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Lancome_Selenium_Suite -->
+                    </div> <!-- method-list-content failed suite-Lancome_Selenium_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -137,6 +123,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Lancome_Selenium_Suite" title="com.itg.training.lancome.FirstSeleniumTest" class="method navigator-link" hash-for-method="clickSignInRegister">clickSignInRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Lancome_Selenium_Suite" title="com.itg.training.lancome.FirstSeleniumTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -169,33 +160,32 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials">
-                  </a> <!-- loginWithValidCredentials -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login test failed!
-	at com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials(FirstSeleniumTest.java:70)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Lancome_Selenium_Suite-class-failed -->
-          <div class="suite-Lancome_Selenium_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.itg.training.lancome.FirstSeleniumTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyAccountWelcomeText">
                   </a> <!-- verifyAccountWelcomeText -->
                   <span class="method-name">verifyAccountWelcomeText</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]&quot;}
+  (Session info: chrome=141.0.7390.108)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d6ee4ea69a88abac8f801bd8ecabb9b, findElement {using=xpath, value=//p[contains(normalize-space(),&apos;Welcome to your account at Ballard Designs&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65402}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65402/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d6ee4ea69a88abac8f801bd8ecabb9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:120)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -204,15 +194,15 @@
                   <a name="verifyUserLoggedIn">
                   </a> <!-- verifyUserLoggedIn -->
                   <span class="method-name">verifyUserLoggedIn</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn() on instance com.itg.training.lancome.FirstSeleniumTest@327514f depends on not successfully finished methods 
-[com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials() on instance com.itg.training.lancome.FirstSeleniumTest@327514f]
+                  <div class="stack-trace">java.lang.AssertionError: ❌ Link text not changed! expected [My Account] but found []
+	at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:113)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Lancome_Selenium_Suite-class-skipped -->
+          </div> <!-- suite-Lancome_Selenium_Suite-class-failed -->
           <div class="suite-Lancome_Selenium_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -224,6 +214,13 @@
                   <a name="clickSignInRegister">
                   </a> <!-- clickSignInRegister -->
                   <span class="method-name">clickSignInRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -298,34 +295,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickSignInRegister')
+data.setCell(0, 1, 'loginWithValidCredentials')
 data.setCell(0, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(0, 3, 4379);
+data.setCell(0, 3, 5741);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithValidCredentials')
+data.setCell(1, 1, 'clickSignInRegister')
 data.setCell(1, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(1, 3, 335);
+data.setCell(1, 3, 5108);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogo')
+data.setCell(2, 1, 'verifyUserLoggedIn')
 data.setCell(2, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(2, 3, 147);
+data.setCell(2, 3, 55);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyWelcomeMessage')
 data.setCell(3, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(3, 3, 76);
+data.setCell(3, 3, 43);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyAccountWelcomeText')
 data.setCell(4, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 25);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyUserLoggedIn')
+data.setCell(5, 1, 'verifyLogo')
 data.setCell(5, 2, 'com.itg.training.lancome.FirstSeleniumTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 23);
 window.suiteTableData['Lancome_Selenium_Suite']= { tableData: data, tableDiv: 'times-div-Lancome_Selenium_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Lancome_Selenium_Suite">
               </div> <!-- times-div-Lancome_Selenium_Suite -->
             </div> <!-- times-div -->
@@ -358,25 +355,35 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLogo</span>
-                <span class="method-start">10671 ms</span>
+                <span class="method-start">7230 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickSignInRegister</span>
-                <span class="method-start">10825 ms</span>
+                <span class="method-start">7257 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyWelcomeMessage</span>
-                <span class="method-start">15209 ms</span>
+                <span class="method-start">12398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentials</span>
+                <span class="method-start">12442 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">15288 ms</span>
+                <span class="method-name">verifyUserLoggedIn</span>
+                <span class="method-start">18186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAccountWelcomeText</span>
+                <span class="method-start">18251 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15643 ms</span>
+                <span class="method-start">18281 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
