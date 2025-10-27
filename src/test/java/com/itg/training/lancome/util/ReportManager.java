@@ -1,4 +1,4 @@
-package com.itg.training.util;
+package com.itg.training.lancome.util;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -7,8 +7,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 /**
  * ✅ ReportManager
- * هذا الكلاس مسؤول عن تهيئة وإدارة تقارير ExtentReports
- * الإصدار 5.x (باستخدام ExtentSparkReporter بدلاً من ExtentHtmlReporter)
+ * مسؤول عن إنشاء وإدارة تقارير ExtentReports
+ * الإصدار 5.x (باستخدام ExtentSparkReporter)
  */
 public class ReportManager {
 
@@ -18,23 +18,23 @@ public class ReportManager {
     // 🔹 تهيئة التقرير (تشغيل مرة واحدة قبل بداية التستات)
     public static void initReport() {
         try {
-            // إنشاء تقرير جديد داخل مجلد test-output
+            // إنشاء تقرير جديد داخل test-output
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter("test-output/AutomationReport.html");
             sparkReporter.config().setDocumentTitle("Automation Test Report");
             sparkReporter.config().setReportName("Lancome Test Execution Report");
             sparkReporter.config().setEncoding("UTF-8");
-            sparkReporter.config().setTheme(Theme.DARK); // 🎨 Dark Mode للوضوح
+            sparkReporter.config().setTheme(Theme.DARK); // 🎨 وضع مظلم للتقرير
 
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);
 
-            // معلومات إضافية تظهر في التقرير
+            // معلومات عامة تظهر في التقرير
             extent.setSystemInfo("Tester", "Ahmad Hanani");
             extent.setSystemInfo("Environment", "QA Environment");
             extent.setSystemInfo("Browser", "Chrome");
             extent.setSystemInfo("Framework", "Selenium + TestNG");
         } catch (Exception e) {
-            System.out.println("❌ Failed to initialize report: " + e.getMessage());
+            System.out.println("❌ Failed to initialize Extent Report: " + e.getMessage());
         }
     }
 
@@ -45,7 +45,7 @@ public class ReportManager {
         return test;
     }
 
-    // 🔹 استرجاع الاختبار الحالي (thread-safe)
+    // 🔹 استرجاع الاختبار الحالي (Thread-Safe)
     public static ExtentTest getTest() {
         return testThread.get();
     }
@@ -54,7 +54,7 @@ public class ReportManager {
     public static void flushReport() {
         if (extent != null) {
             extent.flush();
-            System.out.println("📄 HTML Report generated successfully at: test-output/AutomationReport.html");
+            System.out.println("📄 Report generated successfully at: test-output/AutomationReport.html");
         }
     }
 }
