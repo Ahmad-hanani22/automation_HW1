@@ -5,15 +5,19 @@
   <parameter name="driverPath" value="C:\\Drivers\\chromedriver.exe"/>
   <test thread-count="5" name="Smoke Tests(failed)">
     <classes>
-      <class name="com.itg.training.lancome.FirstSeleniumTest">
+      <class name="com.itg.training.tests.HomeValidation">
         <methods>
-          <include name="loginWithValidCredentials"/>
-          <include name="verifyUserLoggedIn"/>
           <include name="tearDown"/>
-          <include name="verifyAccountWelcomeText"/>
           <include name="setup"/>
+          <include name="performLoginWithValidCredentials"/>
+          <include name="verifyHomePageLogoIsDisplayed"/>
+          <include name="clickSignInOrRegisterButton"/>
+          <include name="verifyUserAccountWelcomeTextMessage"/>
+          <include name="verifyWelcomeTextContainsUserName"/>
+          <include name="verifyUserMyAccountLinkIsDisplayed"/>
+          <include name="verifyLoginPageWelcomeMessageIsVisible"/>
         </methods>
-      </class> <!-- com.itg.training.lancome.FirstSeleniumTest -->
+      </class> <!-- com.itg.training.tests.HomeValidation -->
     </classes>
   </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Lancome Selenium Suite] -->

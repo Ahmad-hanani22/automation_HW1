@@ -20,6 +20,7 @@
   </properties>
 
   <dependencies>
+
     <!-- ✅ Selenium WebDriver -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -35,27 +36,47 @@
       <version>${testng.version}</version>
       <scope>test</scope>
     </dependency>
-    
+
+    <!-- ✅ Extent Reports -->
     <dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>5.1.1</version>
-</dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.1.1</version>
+    </dependency>
 
-    
-
-    <!-- ✅ WebDriverManager (لتنزيل الدرايفرات تلقائيًا مثل ChromeDriver) -->
+    <!-- ✅ WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager.version}</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- ✅ Apache POI (Excel) -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>5.2.5</version>
+    </dependency>
+
+    <!-- ✅ Commons Collections -->
+    <dependency>
+      <groupId>commons-collections</groupId>
+      <artifactId>commons-collections</artifactId>
+      <version>3.2.2</version>
+    </dependency>
+
   </dependencies>
 
   <build>
     <plugins>
-      <!-- ✅ لتشغيل TestNG أوتوماتيكيًا أثناء mvn test -->
+      <!-- ✅ لتشغيل TestNG تلقائيًا -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>

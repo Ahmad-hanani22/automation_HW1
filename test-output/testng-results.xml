@@ -1,53 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="3" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-23T14:54:50 AKDT" name="Lancome Selenium Suite" finished-at="2025-10-23T14:55:14 AKDT" duration-ms="23568">
+  <suite started-at="2025-10-26T16:36:16 AKDT" name="Lancome Selenium Suite" finished-at="2025-10-26T16:36:54 AKDT" duration-ms="37769">
     <groups>
     </groups>
-    <test started-at="2025-10-23T14:54:50 AKDT" name="Smoke Tests" finished-at="2025-10-23T14:55:14 AKDT" duration-ms="23568">
-      <class name="com.itg.training.lancome.FirstSeleniumTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:54:50 AKDT" name="setup" finished-at="2025-10-23T14:55:01 AKDT" duration-ms="11285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C:\\Drivers\\chromedriver.exe]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://certwcs.ballarddesigns.com/?aka_bypass=5C73514EE7A609054D81DE61DD9CA3D6]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-10-26T16:36:16 AKDT" name="Smoke Tests" finished-at="2025-10-26T16:36:54 AKDT" duration-ms="37769">
+      <class name="com.itg.training.tests.HomeValidation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:16 AKDT" name="setup" finished-at="2025-10-26T16:36:26 AKDT" duration-ms="9752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogo()[pri:1, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:01 AKDT" name="verifyLogo" finished-at="2025-10-23T14:55:01 AKDT" duration-ms="47" status="PASS">
+        <test-method signature="verifyHomePageLogoIsDisplayed()[pri:1, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:26 AKDT" name="verifyHomePageLogoIsDisplayed" finished-at="2025-10-26T16:36:26 AKDT" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method signature="clickSignInRegister()[pri:2, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:01 AKDT" name="clickSignInRegister" finished-at="2025-10-23T14:55:07 AKDT" duration-ms="5162" status="PASS">
+        </test-method> <!-- verifyHomePageLogoIsDisplayed -->
+        <test-method signature="clickSignInOrRegisterButton()[pri:2, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:26 AKDT" name="clickSignInOrRegisterButton" finished-at="2025-10-26T16:36:26 AKDT" depends-on-methods="com.itg.training.tests.HomeValidation.verifyHomePageLogoIsDisplayed" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickSignInRegister -->
-        <test-method signature="verifyWelcomeMessage()[pri:3, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:07 AKDT" name="verifyWelcomeMessage" finished-at="2025-10-23T14:55:07 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.clickSignInRegister" duration-ms="43" status="PASS">
+        </test-method> <!-- clickSignInOrRegisterButton -->
+        <test-method signature="verifyLoginPageWelcomeMessageIsVisible()[pri:3, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:26 AKDT" name="verifyLoginPageWelcomeMessageIsVisible" finished-at="2025-10-26T16:36:27 AKDT" depends-on-methods="com.itg.training.tests.HomeValidation.clickSignInOrRegisterButton" duration-ms="664" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWelcomeMessage -->
-        <test-method signature="loginWithValidCredentials()[pri:4, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:07 AKDT" name="loginWithValidCredentials" finished-at="2025-10-23T14:55:12 AKDT" duration-ms="5771" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method signature="verifyUserLoggedIn()[pri:5, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:12 AKDT" name="verifyUserLoggedIn" finished-at="2025-10-23T14:55:13 AKDT" depends-on-methods="com.itg.training.lancome.FirstSeleniumTest.loginWithValidCredentials" duration-ms="183" status="FAIL">
+        </test-method> <!-- verifyLoginPageWelcomeMessageIsVisible -->
+        <test-method signature="performLoginWithValidCredentials()[pri:4, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:27 AKDT" name="performLoginWithValidCredentials" finished-at="2025-10-26T16:36:53 AKDT" depends-on-methods="com.itg.training.tests.HomeValidation.verifyLoginPageWelcomeMessageIsVisible" duration-ms="26101" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[❌ Assertion failed: ❌ Link text not changed! expected [My Account] but found []]]>
+              <![CDATA[❌ Login verification failed: Expected condition failed: waiting for at least one condition to be valid: url to contain "myaccount". Current url: "https://certwcs.ballarddesigns.com/?aka_bypass=5C73514EE7A609054D81DE61DD9CA3D6" || url to contain "account". Current url: "https://certwcs.ballarddesigns.com/?aka_bypass=5C73514EE7A609054D81DE61DD9CA3D6" || presence of element located by: By.xpath: //*[contains(text(),'Welcome to your account')] || presence of element located by: By.xpath: //a[normalize-space()='Sign Out'] (tried for 15 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Assertion failed: ❌ Link text not changed! expected [My Account] but found []
+              <![CDATA[java.lang.AssertionError: ❌ Login verification failed: Expected condition failed: waiting for at least one condition to be valid: url to contain "myaccount". Current url: "https://certwcs.ballarddesigns.com/?aka_bypass=5C73514EE7A609054D81DE61DD9CA3D6" || url to contain "account". Current url: "https://certwcs.ballarddesigns.com/?aka_bypass=5C73514EE7A609054D81DE61DD9CA3D6" || presence of element located by: By.xpath: //*[contains(text(),'Welcome to your account')] || presence of element located by: By.xpath: //a[normalize-space()='Sign Out'] (tried for 15 second(s) with 500 milliseconds interval)
 at org.testng.Assert.fail(Assert.java:111)
-at com.itg.training.lancome.FirstSeleniumTest.verifyUserLoggedIn(FirstSeleniumTest.java:120)
+at com.itg.training.tests.HomeValidation.performLoginWithValidCredentials(HomeValidation.java:86)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -79,40 +63,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLoggedIn -->
-        <test-method signature="verifyAccountWelcomeText()[pri:6, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:13 AKDT" name="verifyAccountWelcomeText" finished-at="2025-10-23T14:55:13 AKDT" duration-ms="154" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- performLoginWithValidCredentials -->
+        <test-method signature="verifyUserMyAccountLinkIsDisplayed()[pri:5, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:53 AKDT" name="verifyUserMyAccountLinkIsDisplayed" finished-at="2025-10-26T16:36:53 AKDT" depends-on-methods="com.itg.training.tests.HomeValidation.performLoginWithValidCredentials" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[❌ Unexpected error during welcome text check: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')]"}
-  (Session info: chrome=141.0.7390.108)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b369c7557d4a08b1ee6fc4b6aad21597, findElement {value=//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55847/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b369c7557d4a08b1ee6fc4b6aad21597]]>
+              <![CDATA[Method com.itg.training.tests.HomeValidation.verifyUserMyAccountLinkIsDisplayed() on instance com.itg.training.tests.HomeValidation@3fc2959f depends on not successfully finished methods 
+[com.itg.training.tests.HomeValidation.performLoginWithValidCredentials() on instance com.itg.training.tests.HomeValidation@3fc2959f]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: ❌ Unexpected error during welcome text check: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')]"}
-  (Session info: chrome=141.0.7390.108)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.24.0', revision: '748ffc9bc3'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b369c7557d4a08b1ee6fc4b6aad21597, findElement {value=//p[contains(normalize-space(),'Welcome to your account at Ballard Designs')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.108, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55847/devtoo..., se:cdpVersion: 141.0.7390.108, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b369c7557d4a08b1ee6fc4b6aad21597
-at org.testng.Assert.fail(Assert.java:111)
-at com.itg.training.lancome.FirstSeleniumTest.verifyAccountWelcomeText(FirstSeleniumTest.java:145)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+              <![CDATA[java.lang.Throwable: Method com.itg.training.tests.HomeValidation.verifyUserMyAccountLinkIsDisplayed() on instance com.itg.training.tests.HomeValidation@3fc2959f depends on not successfully finished methods 
+[com.itg.training.tests.HomeValidation.performLoginWithValidCredentials() on instance com.itg.training.tests.HomeValidation@3fc2959f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -133,15 +94,83 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAccountWelcomeText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.itg.training.lancome.FirstSeleniumTest@327514f]" started-at="2025-10-23T14:55:13 AKDT" name="tearDown" finished-at="2025-10-23T14:55:14 AKDT" duration-ms="861" status="PASS">
+        </test-method> <!-- verifyUserMyAccountLinkIsDisplayed -->
+        <test-method signature="verifyUserAccountWelcomeTextMessage()[pri:6, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:53 AKDT" name="verifyUserAccountWelcomeTextMessage" finished-at="2025-10-26T16:36:53 AKDT" depends-on-methods="com.itg.training.tests.HomeValidation.performLoginWithValidCredentials" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.itg.training.tests.HomeValidation.verifyUserAccountWelcomeTextMessage() on instance com.itg.training.tests.HomeValidation@3fc2959f depends on not successfully finished methods 
+[com.itg.training.tests.HomeValidation.performLoginWithValidCredentials() on instance com.itg.training.tests.HomeValidation@3fc2959f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.itg.training.tests.HomeValidation.verifyUserAccountWelcomeTextMessage() on instance com.itg.training.tests.HomeValidation@3fc2959f depends on not successfully finished methods 
+[com.itg.training.tests.HomeValidation.performLoginWithValidCredentials() on instance com.itg.training.tests.HomeValidation@3fc2959f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAccountWelcomeTextMessage -->
+        <test-method signature="verifyWelcomeTextContainsUserName()[pri:7, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:53 AKDT" name="verifyWelcomeTextContainsUserName" finished-at="2025-10-26T16:36:53 AKDT" depends-on-methods="com.itg.training.tests.HomeValidation.performLoginWithValidCredentials" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.itg.training.tests.HomeValidation.verifyWelcomeTextContainsUserName() on instance com.itg.training.tests.HomeValidation@3fc2959f depends on not successfully finished methods 
+[com.itg.training.tests.HomeValidation.performLoginWithValidCredentials() on instance com.itg.training.tests.HomeValidation@3fc2959f]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.itg.training.tests.HomeValidation.verifyWelcomeTextContainsUserName() on instance com.itg.training.tests.HomeValidation@3fc2959f depends on not successfully finished methods 
+[com.itg.training.tests.HomeValidation.performLoginWithValidCredentials() on instance com.itg.training.tests.HomeValidation@3fc2959f]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWelcomeTextContainsUserName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.itg.training.tests.HomeValidation@3fc2959f]" started-at="2025-10-26T16:36:53 AKDT" name="tearDown" finished-at="2025-10-26T16:36:54 AKDT" duration-ms="831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.itg.training.lancome.FirstSeleniumTest -->
+      </class> <!-- com.itg.training.tests.HomeValidation -->
     </test> <!-- Smoke Tests -->
   </suite> <!-- Lancome Selenium Suite -->
 </testng-results>
